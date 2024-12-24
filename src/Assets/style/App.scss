@@ -1,0 +1,50 @@
+@font-face {
+    font-family:"slantFont" ;
+    src: url("../Fonts/SlantFont.otf");
+}
+$SlantFont:"slantFont";
+@font-face {
+    font-family: "regularFont";
+    src: url("../Fonts/RegularFont.otf");
+}
+$RegularFont:"regularFont";
+form
+{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+    color: black;
+    font-family: $SlantFont;
+    font-size: 18px;
+    border-radius: 10px;
+
+    .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        
+        input,select
+        {
+            margin-top: 5px;
+            margin-bottom: 25px;
+            padding: 5px;
+            color: red;
+            font-family: $RegularFont;
+            font-size: 25px;
+        }
+    }
+    button
+    {
+        font-family: $SlantFont;
+        font-size: 15px;
+        color: white;
+        background-color: black;
+        padding: 10px 5px;
+        border-radius: 5px;
+
+    }
+}

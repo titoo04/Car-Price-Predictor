@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "slantFont";
+  src: url("../Fonts/SlantFont.otf");
+}
+@font-face {
+  font-family: "regularFont";
+  src: url("../Fonts/RegularFont.otf");
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  color: black;
+  font-family: "slantFont";
+  font-size: 18px;
+  border-radius: 10px;
+}
+form .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+form .container input, form .container select {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding: 5px;
+  color: red;
+  font-family: "regularFont";
+  font-size: 25px;
+}
+form button {
+  font-family: "slantFont";
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  padding: 10px 5px;
+  border-radius: 5px;
+}/*# sourceMappingURL=App.css.map */
+
+.predicted-price-container {
+  padding: 2rem 3rem;
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 1.5rem;
+  width: 30%;
+  margin: -2rem auto 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.predicted-price-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+}
